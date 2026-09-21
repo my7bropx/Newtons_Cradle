@@ -1,0 +1,11 @@
+[package]
+name = "newtons_cradle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = { version = "0.4", features = ["audio"] }
+
+[profile.release]
+opt-level = 3
+lto = true
